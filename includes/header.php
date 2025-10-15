@@ -141,19 +141,19 @@
                                     <a href="<?php echo base_url(); ?>">Home</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a href="contact-us.html">Menus</a>
+                                    <a href="menu">Menus</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a href="contact-us.html">About Us</a>
+                                    <a href="about">About Us</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a href="contact-us.html">Contact Us</a>
+                                    <a href="contact">Contact Us</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a href="contact-us.html">Reservation</a>
+                                    <a href="reservation">Reservation</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a href="contact-us.html">Blog</a>
+                                    <a href="blog">Blog</a>
                                 </li>
                                 <!-- <li class="menu-item menu-item-has-children-mobile">
 

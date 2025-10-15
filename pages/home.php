@@ -61,9 +61,312 @@
 </style>
 
 
+<style>
+    .hero-header {
+        position: relative;
+        height: 80vh;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        color: #fff;
+        text-align: center;
+    }
+
+    .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        padding: 0 1rem;
+        max-width: 900px;
+        animation: fadeInUp 1s ease forwards;
+    }
+
+    .hero-title {
+        font-size: clamp(28px, 4vw, 52px);
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    .hero-sub {
+        font-size: clamp(16px, 1.6vw, 20px);
+        color: #e5e7eb;
+        margin-bottom: 1.8rem;
+    }
+
+    .hero-btn {
+        display: inline-block;
+        padding: 0.9rem 2.4rem;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #d4af37, #b98f26);
+        color: #0b1020;
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: 0.3px;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 12px rgba(212, 175, 55, 0.25);
+    }
+
+    .hero-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 18px rgba(212, 175, 55, 0.35);
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-header {
+            height: 70vh;
+        }
+    }
+</style>
+
+
+<style>
+    .hero-header {
+        position: relative;
+        height: 80vh;
+        min-height: 500px;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    .hero-slides {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: opacity 700ms ease;
+        display: grid;
+        place-items: center;
+    }
+
+    .hero-slide.is-active {
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .hero-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .35), rgba(0, 0, 0, .7));
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        padding: 0 1rem;
+        max-width: 900px;
+        animation: fadeUp 600ms ease both;
+    }
+
+    .hero-title {
+        font-size: clamp(28px, 4vw, 52px);
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    .hero-sub {
+        font-size: clamp(16px, 1.6vw, 20px);
+        color: #e5e7eb;
+        margin-bottom: 1.8rem;
+    }
+
+    .hero-btn {
+        display: inline-block;
+        padding: .9rem 2.4rem;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #d4af37, #b98f26);
+        color: #0b1020;
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: .3px;
+        box-shadow: 0 0 12px rgba(212, 175, 55, .25);
+        transition: transform .3s, box-shadow .3s;
+    }
+
+    .hero-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 18px rgba(212, 175, 55, .35);
+    }
+
+    /* Arrows */
+    .hero-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .45);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, .25);
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        z-index: 5;
+        transition: background .2s, transform .2s;
+    }
+
+    .hero-prev {
+        left: 16px;
+    }
+
+    .hero-next {
+        right: 16px;
+    }
+
+    .hero-nav:hover {
+        background: rgba(0, 0, 0, .6);
+        transform: translateY(-50%) scale(1.05);
+    }
+
+    /* Dots */
+    .hero-dots {
+        position: absolute;
+        left: 50%;
+        bottom: 18px;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 5;
+    }
+
+    .hero-dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, .55);
+        background: rgba(255, 255, 255, .25);
+        cursor: pointer;
+        transition: transform .2s, background .2s, border-color .2s;
+    }
+
+    .hero-dot.is-active {
+        background: #d4af37;
+        border-color: #d4af37;
+        transform: scale(1.1);
+    }
+
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(14px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-header {
+            height: 70vh;
+        }
+    }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+        .hero-slide {
+            transition: none;
+        }
+
+        .hero-content {
+            animation: none;
+        }
+    }
+</style>
+
+
+
+
+<!-- ===== HERO SLIDER (Vanilla JS, no dependencies) ===== -->
+<section class="hero-header hero-slider" aria-roledescription="carousel" aria-label="Hero">
+    <!-- Slides -->
+    <div class="hero-slides">
+        <!-- Slide 1 -->
+        <article class="hero-slide is-active" aria-roledescription="slide" aria-label="1 of 2">
+            <img src="assets/images/slider/slider-1.webp" alt="Steakhouse with Indian flavours" class="hero-bg"
+                loading="eager">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2 class="hero-title">Bold Indian flavours meet the timeless<br> art of the steakhouse.</h2>
+                <p class="hero-sub">In Central London, we serve prime cuts with spices, crafted with passion and fire.
+                </p>
+                <a href="menu.html" class="hero-btn">Explore Menu</a>
+            </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="hero-slide" aria-roledescription="slide" aria-label="2 of 2">
+            <img src="assets/images/slider/slider-2.webp" alt="Halal steak in London" class="hero-bg" loading="lazy">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2 class="hero-title">Best Halal Steak in London<br> Where East Meets West</h2>
+                <p class="hero-sub">Enjoy a dining experience where East and West come together on every plate.</p>
+                <a href="menu.html" class="hero-btn">Explore Menu</a>
+            </div>
+        </article>
+
+        <!-- (Optional) Add more slides by duplicating <article class="hero-slide">… -->
+    </div>
+
+    <!-- Controls -->
+    <button class="hero-nav hero-prev" aria-label="Previous slide">‹</button>
+    <button class="hero-nav hero-next" aria-label="Next slide">›</button>
+
+    <!-- Dots -->
+    <div class="hero-dots" role="tablist" aria-label="Choose slide"></div>
+</section>
+
+
+
 
 <!--  slider-title-home-->
-<section class="page-title-home">
+<!-- <section class="page-title-home">
     <div class="tf-container w-1712">
         <div class="wg-slider-home">
             <div class="swiper-container slider-page-title-home">
@@ -80,12 +383,6 @@
                                     In Central London, we serve prime cuts with spices, crafted with passion
                                     and fire.
                                 </p>
-                                <!-- <a href="#"
-                                    class="btn-readmore fade-item fade-item-3 btn-switch-text tf-btn font-cerebri">
-                                    <span>
-                                        <span class="btn-double-text" data-text="READ MORE">READ MORE</span>
-                                    </span>
-                                </a> -->
                             </div>
                         </div>
                     </div>
@@ -103,12 +400,6 @@
                                     Enjoy a dining experience where East and West come together on every
                                     plate.
                                 </p>
-                                <!-- <a href="#"
-                                    class="fade-item fade-item-3 btn-readmore btn-switch-text tf-btn font-cerebri">
-                                    <span>
-                                        <span class="btn-double-text" data-text="READ MORE">READ MORE</span>
-                                    </span>
-                                </a> -->
                             </div>
                         </div>
                     </div>
@@ -123,8 +414,25 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- /slider-titpe-home -->
+
+<!-- ===== HERO HEADER (Static Image) ===== -->
+<!-- <section class="hero-header">
+    <img src="assets/images/slider/slider-2.webp" alt="Steakhouse with Indian flavours" class="hero-bg">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h2 class="hero-title">Bold Indian flavours meet the timeless<br> art of the steakhouse.</h2>
+        <p class="hero-sub">
+            In Central London, we serve prime cuts with spices, crafted with passion and fire.
+        </p>
+        <a href="menu.html" class="hero-btn">Explore Menu</a>
+    </div>
+</section> -->
+
+<!-- ===== HERO HEADER STYLES ===== -->
+
 
 <!-- section discovery -->
 <section class="section-discovery-product tf-spacing-14">
@@ -895,3 +1203,103 @@
     </div>
 </section>
 <!-- /section infor store  -->
+
+
+
+<script>
+    (() => {
+        const root = document.querySelector('.hero-slider');
+        const slides = Array.from(root.querySelectorAll('.hero-slide'));
+        const prevBtn = root.querySelector('.hero-prev');
+        const nextBtn = root.querySelector('.hero-next');
+        const dotsWrap = root.querySelector('.hero-dots');
+
+        let idx = 0,
+            timer = null,
+            hovering = false;
+        const DURATION = 5000; // autoplay ms
+
+        // Build dots
+        slides.forEach((_, i) => {
+            const b = document.createElement('button');
+            b.className = 'hero-dot' + (i === 0 ? ' is-active' : '');
+            b.type = 'button';
+            b.setAttribute('role', 'tab');
+            b.setAttribute('aria-label', `Go to slide ${i+1}`);
+            b.addEventListener('click', () => go(i, true));
+            dotsWrap.appendChild(b);
+        });
+        const dots = Array.from(dotsWrap.children);
+
+        function go(n, user = false) {
+            slides[idx].classList.remove('is-active');
+            dots[idx].classList.remove('is-active');
+            idx = (n + slides.length) % slides.length;
+            slides[idx].classList.add('is-active');
+            dots[idx].classList.add('is-active');
+            if (user) restart();
+        }
+        const next = () => go(idx + 1);
+        const prev = () => go(idx - 1);
+
+        function start() {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            stop();
+            timer = setInterval(() => {
+                if (!hovering) next();
+            }, DURATION);
+        }
+
+        function stop() {
+            if (timer) clearInterval(timer);
+            timer = null;
+        }
+
+        function restart() {
+            stop();
+            start();
+        }
+
+        // Events
+        nextBtn.addEventListener('click', () => next());
+        prevBtn.addEventListener('click', () => prev());
+        root.addEventListener('mouseenter', () => {
+            hovering = true;
+        });
+        root.addEventListener('mouseleave', () => {
+            hovering = false;
+        });
+
+        // Keyboard
+        root.setAttribute('tabindex', '0');
+        root.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') next();
+            if (e.key === 'ArrowLeft') prev();
+        });
+
+        // Touch swipe
+        let startX = 0,
+            dx = 0;
+        root.addEventListener('touchstart', e => {
+            startX = e.touches[0].clientX;
+            dx = 0;
+        }, {
+            passive: true
+        });
+        root.addEventListener('touchmove', e => {
+            dx = e.touches[0].clientX - startX;
+        }, {
+            passive: true
+        });
+        root.addEventListener('touchend', () => {
+            if (Math.abs(dx) > 50)(dx < 0 ? next() : prev());
+        });
+
+        // Kickoff
+        start();
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) stop();
+            else start();
+        });
+    })();
+</script>

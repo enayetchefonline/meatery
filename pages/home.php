@@ -177,7 +177,7 @@
                 <h1 class="hero-title">Bold Indian flavours meet the timeless<br> art of the steakhouse.</h1>
                 <p class="hero-sub">In Central London, we serve prime cuts with spices, crafted with passion and fire.
                 </p>
-                <a href="menu.html" class="hero-btn">Explore Menu</a>
+                <!-- <a href="menu.html" class="hero-btn">Explore Menu</a> -->
             </div>
         </article>
 
@@ -187,7 +187,7 @@
             <div class="hero-content">
                 <h2 class="hero-title">Best Halal Steak in London<br> Where East Meets West</h2>
                 <p class="hero-sub">Enjoy a dining experience where East and West come together on every plate.</p>
-                <a href="menu.html" class="hero-btn">Explore Menu</a>
+                <!-- <a href="menu.html" class="hero-btn">Explore Menu</a> -->
             </div>
         </article>
     </div>

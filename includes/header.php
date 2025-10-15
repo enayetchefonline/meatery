@@ -32,7 +32,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/images/logo/favicon.html" />
 </head>
 
-<body class="counter-scroll ">
+<body class="counter-scroll" style="overflow-x: hidden !important">
 
     <div id="wrapper" class="wrapper has-bg">
 

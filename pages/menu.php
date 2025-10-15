@@ -696,6 +696,7 @@
     body {
         background: var(--bg);
         color: var(--ink);
+        overflow-x: hidden !important;
     }
 
     .page-title .sub-title {

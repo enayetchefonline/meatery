@@ -18,16 +18,21 @@
                                 data-retina="assets/images/logo/logo.webp" alt="">
                         </a>
                     </div>
-                    <!-- <div class="footer-link">
-                        <ul class="overflow-x-auto">
-                            <li><a href="/">HOME</a> </li>
-                            <li><a href="/menu">MENUS</a> </li>
-                            <li><a href="/about">ABOUT US</a></li>
-                            <li><a href="/contact">CONTACT US</a></li>
-                            <li><a href="/reservation"> RESERVATION</a></li>
-                            <li><a href="/blog">BLOG</a></li>
-                        </ul>
-                    </div> -->
+                    <!-- Footer Links: Two Columns, Responsive -->
+                    <div class="footer-link">
+                        <div class="footer-link-columns">
+                            <ul>
+                                <li><a href="/">HOME</a></li>
+                                <li><a href="/menu">MENUS</a></li>
+                                <li><a href="/about">ABOUT US</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="/contact">CONTACT US</a></li>
+                                <li><a href="/reservation">RESERVATION</a></li>
+                                <li><a href="/blog">BLOG</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="footer-contact">
                         <ul class="contact">
                             <li class="call">
@@ -117,74 +122,46 @@
 <script type="text/javascript" src="assets/js/main.js"></script>
 <!-- /Javascript -->
 
-<!-- <style>
-    /* ===== Footer links responsiveness ===== */
-    .footer .footer-link ul {
+<style>
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .footer-link-columns {
         display: flex;
-        gap: 18px;
-        /* keep your spacing */
-        flex-wrap: wrap;
-        /* wrap on larger screens */
         justify-content: center;
-        /* center items */
-        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .footer-link-columns ul {
         list-style: none;
         padding: 0;
         margin: 0;
     }
 
-    /* Make links nicely tappable */
-    .footer .footer-link li a {
+    .footer-link-columns li {
+        margin-bottom: 10px;
+    }
+
+    .footer-link-columns li a {
         display: inline-block;
-        padding: 6px 4px;
-        /* subtle tap target padding */
+        padding: 6px 10px;
         white-space: nowrap;
-        /* keep each link on one line */
     }
 
-    /* Mobile: horizontal scroll with snap */
     @media (max-width: 768px) {
-        .footer .footer-link ul {
-            flex-wrap: nowrap;
-            /* single row */
-            overflow-x: auto;
-            /* scroll horizontally */
-            -webkit-overflow-scrolling: touch;
-            /* smooth on iOS */
-            scroll-snap-type: x mandatory;
-            /* snap to items */
-            gap: 16px;
-            padding-bottom: 8px;
-            /* room for hidden scrollbar */
+        .footer-link-columns {
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
         }
 
-        .footer .footer-link li {
-            flex: 0 0 auto;
-            scroll-snap-align: center;
-            /* center item when snapped */
-        }
-
-        /* Hide scrollbar (keeps scroll functional) */
-        .footer .footer-link ul::-webkit-scrollbar {
-            display: none;
-        }
-
-        .footer .footer-link ul {
-            scrollbar-width: none;
+        .footer-link-columns ul {
+            margin-bottom: 12px;
         }
     }
-
-    /* Very small devices: a touch more spacing */
-    @media (max-width: 420px) {
-        .footer .footer-link ul {
-            gap: 14px;
-        }
-
-        .footer .footer-link li a {
-            padding: 8px 6px;
-        }
-    }
-</style> -->
+</style>
 </body>
 
 </html>

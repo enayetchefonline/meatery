@@ -167,6 +167,7 @@ body {
   background: var(--Secondary);
   line-height: 1;
   padding: 0 !important;
+  overflow-x: hidden!important;
 }
 body::-webkit-scrollbar {
   width: 0px;

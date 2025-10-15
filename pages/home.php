@@ -1,0 +1,897 @@
+<style>
+    .home-slider {
+        position: relative;
+    }
+
+    .home-slider::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        /* adjust opacity (0.4 = 40% black) */
+        z-index: 1;
+    }
+
+    .home-slider .content {
+        position: relative;
+        z-index: 2;
+        /* ensures text stays above the overlay */
+    }
+
+    /* Base Button Style */
+    .btn-custom {
+        display: inline-block;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        padding: 12px 28px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Dark Button */
+    .btn-dark-custom {
+        background: linear-gradient(135deg, #000, #333);
+        color: #fff;
+        border: none;
+    }
+
+    .btn-dark-custom:hover {
+        background: linear-gradient(135deg, #333, #000);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Outline Button */
+    .btn-outline-dark-custom {
+        background: transparent;
+        border: 2px solid #333;
+        color: #333;
+    }
+
+    .btn-outline-dark-custom:hover {
+        background: #333;
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+</style>
+
+
+
+<!--  slider-title-home-->
+<section class="page-title-home">
+    <div class="tf-container w-1712">
+        <div class="wg-slider-home">
+            <div class="swiper-container slider-page-title-home">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="home-slider style-2">
+                            <img class="ls-is-cached lazyloaded" src="assets/images/slider/slider-1.webp"
+                                data-src="assets/image/slider/slider-1.jpg" alt="Steakhouse with Indian flavours">
+                            <div class="content">
+                                <h2 class="fade-item fade-item-1 title fw-bold">
+                                    Bold Indian flavours meet the timeless <br> art of the steakhouse.
+                                </h2>
+                                <p class="sub-title fade-item fade-item-2">
+                                    In Central London, we serve prime cuts with spices, crafted with passion
+                                    and fire.
+                                </p>
+                                <!-- <a href="#"
+                                    class="btn-readmore fade-item fade-item-3 btn-switch-text tf-btn font-cerebri">
+                                    <span>
+                                        <span class="btn-double-text" data-text="READ MORE">READ MORE</span>
+                                    </span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="home-slider style-2">
+                            <img class="ls-is-cached lazyloaded" src="assets/images/slider/slider-2.webp"
+                                data-src="assets/image/slider/slider-2.jpg" alt="Halal steak in London">
+                            <div class="content">
+                                <h1 class="fade-item fade-item-1 title fw-bold">
+                                    Best Halal Steak in London<br>
+                                    Where East Meets West
+                                </h1>
+                                <p class="fade-item fade-item-2 sub-title">
+                                    Enjoy a dining experience where East and West come together on every
+                                    plate.
+                                </p>
+                                <!-- <a href="#"
+                                    class="fade-item fade-item-3 btn-readmore btn-switch-text tf-btn font-cerebri">
+                                    <span>
+                                        <span class="btn-double-text" data-text="READ MORE">READ MORE</span>
+                                    </span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="btn-slider-home btn-slider btn-prev">
+                <i class="icon-left-chevron"></i>
+            </div>
+            <div class="btn-slider-home btn-slider btn-next">
+                <i class="icon-uniE919"></i>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /slider-titpe-home -->
+
+<!-- section discovery -->
+<section class="section-discovery-product tf-spacing-14">
+    <div class="tf-container w-1712">
+        <div class="row">
+            <div class="heading-section style-2 wow fadeInUp" data-wow-delay="0s">
+                <p class="sub-title">DISCOVER OUR MENU</p>
+                <h2 class="title">
+                    Crafted with the finest ingredients — grass-fed beef, fresh British seafood,
+                    seasonal produce, and artisan cheeses.
+                </h2>
+            </div>
+
+            <div class="wg-slider-product style-2 wow fadeInUp" data-wow-delay="0s">
+                <div class="swiper-container page-product-slider-home">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img class="ls-is-cached lazyloaded" src="assets/images/item/4.png"
+                                        data-src="assets/images/item/4.png" alt="none">
+                                </div>
+                                <div class="product-detail">
+                                    <p class="name-product">
+                                        Cutlet Lamb Chop
+                                    </p>
+                                    <p class="text">
+                                        Marinated lamb chop, grilled to perfection
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img class="ls-is-cached lazyloaded" src="assets/images/item/1.png"
+                                        data-src="assets/images/item/1.png" alt="none">
+                                </div>
+                                <p class="name-product">
+                                    Chicken 65
+                                </p>
+                                <p class="text">
+                                    Crispy Chicken tossed in onions peppers chilli
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img class="ls-is-cached lazyloaded" src="assets/images/item/2.jpg"
+                                        data-src="assets/images/item/2.jpg" alt="none">
+                                </div>
+                                <p class="name-product">
+                                    Meatery Lamb
+                                </p>
+                                <p class="text">
+                                    Slow cooked mince meat and lamb cubes bhuna style medium spice
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="image">
+
+                                    <img class="ls-is-cached lazyloaded" src="assets/images/item/3.jpg"
+                                        data-src="assets/images/item/3.jpg" alt="none">
+                                </div>
+                                <p class="name-product">
+                                    Lamb Shank
+                                </p>
+                                <p class="text">
+                                    Served with mash potato and gravy
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-section aos-init aos-animate " data-aos-duration="1000" data-aos="fade-up">
+
+                <a href="/menu" class="btn-view-more tf-btn font-cerebri style-2 style-4 wow fadeInUp"
+                    data-wow-delay="0s">EXPLORE
+                    OUR MENU</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- /section discovery-product -->
+
+<!-- About Us Section -->
+<!-- <section class="section-box-history py-5 bg-light">
+    <div class="tf-container">
+        <div class="row align-items-center">
+
+            
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="assets/image/testimontial/image-3.png" alt="Our Trending Dishes"
+                    class="img-fluid rounded shadow">
+            </div>
+
+            
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3">Our Trending Dishes</h2>
+                <p class="mb-4">
+                    Try our famous <strong>Lamb Kebab</strong>, viral <strong>TikTok Tacos</strong>,
+                    and juicy <strong>Meaty Wings</strong>. Freshly served at our restaurant
+                    and takeaway locations near Edgware Road, Marble Arch, Paddington,
+                    Mayfair, Notting Hill, and more.
+                </p>
+                <a href="#" class="btn btn-dark px-4 py-2 rounded-pill">View Our Menu</a>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+
+<!-- History Section -->
+<section class="section-box-history py-5">
+    <div class="tf-container">
+        <div class="row align-items-center flex-lg-row-reverse">
+
+            <!-- Right Image -->
+
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3">Our Trending Dishes</h2>
+                <p class="mb-4">
+                    Try our famous <strong>Lamb Kebab</strong>, viral <strong>TikTok Tacos</strong>,
+                    and juicy <strong>Meaty Wings</strong>. Freshly served at our restaurant
+                    and takeaway locations near Edgware Road, Marble Arch, Paddington,
+                    Mayfair, Notting Hill, and more.
+                </p>
+            </div>
+
+
+            <!-- Left Text -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="assets/images/meatery_lamb.webp" alt="Restaurant Interior" class="img-fluid rounded shadow">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section-box-history py-5">
+    <div class="tf-container">
+        <div class="row align-items-center flex-lg-row-reverse">
+
+            <!-- Right Image -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="assets/images/meatery_lamb.webp" alt="Restaurant Interior" class="img-fluid rounded shadow">
+            </div>
+
+            <!-- Left Text -->
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3">Unforgettable Dining Experience</h2>
+                <p class="mb-4">
+                    Enjoy delicious meals including <strong>Lamb Kebab</strong>,
+                    <strong>TikTok Tacos</strong>, and <strong>Meaty Wings</strong>.
+                    Located near Edgware Road, Marble Arch, and Mayfair,
+                    our restaurant blends great taste with warm hospitality.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- section discovery shop-->
+<section class="section-discovery-shop tf-spacing-1">
+    <div class="tf-container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="discovery-shop-wrap">
+                    <div class="heading-section wow fadeInUp" data-wow-delay="0s">
+                        <p class="sub-title">
+                            EXPLORE OUR MENU
+                        </p>
+                        <h2 class="title fs-45">
+                            Top Dishes
+                        </h2>
+                        <p class="desc">
+                            Explore our menu of Halal steak, seafood, and seasonal produce in Central London near
+                            Edgware Road, Marble Arch, and Paddington.
+                        </p>
+                    </div>
+                    <div class="swiper-container discovery-shop-3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="wg-product-item hover-img wow fadeInUp" data-wow-delay="0s">
+                                    <div class="image-wrap">
+                                        <img class="ls-is-cached lazyloaded " src="assets/images/item/1.png"
+                                            data-src="assets/images/item/1.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="product-name fw-bold">
+                                            <a href="">
+                                                Chicken 65
+                                            </a>
+                                        </h3>
+                                        <p class="type ">
+                                            <a href="#" class="font-cerebri">
+                                                Crispy Chicken tossed in onions peppers chilli</a>,
+                                        </p>
+
+                                        <p class="price fw-book"> £12.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wg-product-item hover-img wow fadeInUp" data-wow-delay="0s">
+                                    <div class="image-wrap">
+                                        <img class="ls-is-cached lazyloaded " src="assets/images/item/2.jpg"
+                                            data-src="assets/images/item/2.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="product-name fw-bold">
+                                            <a href="">
+                                                Meatery Lamb
+                                            </a>
+                                        </h3>
+                                        <p class="type ">
+                                            <a href="#" class="font-cerebri">Slow cooked mince meat and lamb cubes bhuna
+                                                medium spice</a>
+                                        </p>
+
+                                        <p class="price fw-book"> £22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wg-product-item hover-img wow fadeInUp" data-wow-delay="0s">
+                                    <div class="image-wrap">
+                                        <img class="ls-is-cached lazyloaded " src="assets/images/item/3.jpg"
+                                            data-src="assets/images/item/3.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="product-name fw-bold">
+                                            <a href="">
+                                                Lamb Shank
+                                            </a>
+                                        </h3>
+                                        <p class="type ">
+                                            <a href="#" class="font-cerebri">Served with mash potato and gravy</a>
+                                        </p>
+
+                                        <p class="price fw-book"> £25.00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="btn-slider btn-discovery-shop home-1 btn-next">
+                        <i class="icon-uniE919 "></i>
+                    </div>
+                    <div class="btn-slider btn-discovery-shop home-1 btn-prev">
+                        <i class="icon-left-chevron "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- /section discovery shop-->
+
+<!-- section discovery shop now -->
+<section class="section-discovery-shop-now">
+    <div class="tf-container w-1712">
+
+        <div class="discovery-now ">
+            <h2 class="title fw-bold wow fadeInUp" data-wow-delay="0s">British Steaks. Indian Heat. Unforgettable Taste.
+            </h2>
+            <a href="/reservation" class="btn-readmore btn-switch-text tf-btn font-cerebri wow fadeInUp"
+                data-wow-delay="0s">
+                <span>
+                    <span class="btn-double-text" data-text="BOOK A TABLE NOW">BOOK A TABLE NOW</span>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- /section discovery now -->
+
+<!-- section testimonials -->
+<section class="section-testimonials tf-spacing-1">
+    <div class="tf-container">
+        <div class="testimonials-main">
+            <div class="swiper-container testimonials-slider-3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonials-item wow fadeInUp" data-wow-delay="0s">
+                            <div class="content">
+                                <div class="icon-quote">
+                                    <img src="assets/icons/block-quite.png" alt="">
+                                </div>
+                                <p class="text fw-medium font-cormorant">
+                                    “ I love this store! … This the birthplace of Cubze ”
+                                </p>
+                                <p class="sub-text">D.e.l.i.c.i.o.u.s. cubed servings of truffle that
+                                    are
+                                    hand
+                                    wrapped and include an inspirational message about happiness!
+                                    If you look forward to knowing your Chinese cookie fortune, this is
+                                    so
+                                    much
+                                    better.</p>
+                            </div>
+                            <div class="author-item">
+                                <div class="author-image">
+                                    <img class="lazyloaded ls-is-cached" src="assets/image/author/author-1.jpg"
+                                        data-src="assets/image/author/author-1.jpg" alt="">
+                                </div>
+                                <div class="author-infor">
+                                    <a href="#" class="name fw-medium ">Jacqueline. D</a>
+                                    <p class="duty fw-book">National Operations Technician</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="content">
+
+                                <div class="icon-quote">
+                                    <img src="assets/icons/block-quite.png" alt="">
+                                </div>
+                                <p class="text fw-medium font-cormorant">
+                                    “ I love the quality of your chocolate, your graphics ”
+                                </p>
+                                <p class="sub-text">Thanks very much. Angela did a fantastic job (again)
+                                    last
+                                    night walking us through the tasting and the history of
+                                    chocolate, and I have received great feedback about the event.
+                                    Thanks to
+                                    you
+                                    and your team.</p>
+                            </div>
+
+                            <div class="author-item">
+                                <div class="author-image">
+                                    <img class="lazyloaded ls-is-cached" src="assets/image/author/author-2.jpg"
+                                        data-src="assets/image/author/author-2.jpg" alt="">
+                                </div>
+                                <div class="author-infor">
+                                    <a href="#" class="name fw-medium ">Katte Mart. A</a>
+                                    <p class="duty fw-book">Product Group Analyst </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="content">
+
+                                <div class="icon-quote">
+                                    <img src="assets/icons/block-quite.png" alt="">
+                                </div>
+                                <p class="text fw-medium font-cormorant">
+                                    “ Madelaine chocolate is creamy and silky and a favorite with my
+                                    customers.
+                                    ”
+
+                                </p>
+                                <p class="sub-text">Our team had an awesome experience. We especially
+                                    liked
+                                    the
+                                    little snippets where the instructors went over the history
+                                    of chocolate – it was super informative.</p>
+                            </div>
+
+                            <div class="author-item">
+                                <div class="author-image">
+                                    <img class="lazyloaded ls-is-cached" src="assets/image/author/author-3.jpg"
+                                        data-src="assets/image/author/author-3.jpg" alt="">
+                                </div>
+                                <div class="author-infor">
+                                    <a href="#" class="name fw-medium ">Liania. M</a>
+                                    <p class="duty fw-book">Forward Implementation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials-item">
+                            <div class="content">
+
+                                <div class="icon-quote">
+                                    <img src="assets/icons/block-quite.png" alt="">
+                                </div>
+                                <p class="text fw-medium font-cormorant">
+                                    “ I love this store! … This the birthplace of Cubze ”
+                                </p>
+                                <p class="sub-text">D.e.l.i.c.i.o.u.s. cubed servings of truffle that
+                                    are
+                                    hand
+                                    wrapped and include an inspirational message about happiness!
+                                    If you look forward to knowing your Chinese cookie fortune, this is
+                                    so
+                                    much
+                                    better.</p>
+                            </div>
+
+                            <div class="author-item">
+                                <div class="author-image">
+                                    <img class="lazyloaded ls-is-cached" src="assets/image/author/author-1.jpg"
+                                        data-src="assets/image/author/author-1.jpg" alt="">
+                                </div>
+                                <div class="author-infor">
+                                    <a href="#" class="name fw-medium ">Jacqueline. D</a>
+                                    <p class="duty fw-book">National Operations Technician</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials-item">
+                            <div class="content">
+
+                                <div class="content">
+
+                                    <div class="icon-quote">
+                                        <img src="assets/icons/block-quite.png" alt="">
+                                    </div>
+                                    <p class="text fw-medium font-cormorant">
+                                        “ I love the quality of your chocolate, your graphics ”
+                                    </p>
+                                    <p class="sub-text">Thanks very much. Angela did a fantastic job
+                                        (again)
+                                        last
+                                        night walking us through the tasting and the history of
+                                        chocolate, and I have received great feedback about the event.
+                                        Thanks to
+                                        you
+                                        and your team.</p>
+                                </div>
+                            </div>
+
+                            <div class="author-item">
+                                <div class="author-image">
+                                    <img class="lazyloaded ls-is-cached" src="assets/image/author/author-2.jpg"
+                                        data-src="assets/image/author/author-2.jpg" alt="">
+                                </div>
+                                <div class="author-infor">
+                                    <a href="#" class="name fw-medium ">Jacqueline. D</a>
+                                    <p class="duty fw-book">National Operations Technician</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination testimonials-pagination">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /section testimonials -->
+
+
+<!-- Blog Section Start -->
+<!-- <section class="section-our-news tf-spacing-1">
+    <div class="tf-container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="our-news">
+                    <div class="heading-section wow fadeInUp" data-wow-delay="0s">
+                        <p class="sub-title">
+                            OUR LATEST NEWS
+                        </p>
+                        <h2 class="title">
+                            What News Do We Have?
+
+                        </h2>
+                        <p class="desc">
+                            Cras vitae ornare nunc, vitae tempus eros. Donec mi libero, eleifend at laoreet
+                            id, convallis nec <br> nunc. Proin consequat
+                            mattis.
+                        </p>
+                    </div>
+                    <div class="swiper-container slider-our-news-3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="wg-blog wow fadeInUp" data-wow-delay="0s">
+                                    <div class="blog-img">
+                                        <img src="assets/image/blog/blog-1.jpg" alt="Blog 1">
+                                        <div class="date-time">
+                                            <p class="entry-day fw-medium">25</p>
+                                            <p class="entry-month fw-book">JUN 23</p>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="meta">
+                                            <a href="#" class="entry-author font-cerebri fw-book text-13-30">
+                                                BY JHON MATTER
+                                            </a>
+                                            <div class="entry-type">
+                                                <a href="#" class="font-cerebri fw-book text-13-30">
+                                                    CHOCOLATE
+                                                    FOOD</a>
+                                                ,
+                                                <a href="#" class=" font-cerebri fw-book text-13-30">
+                                                    FOOD
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h3 class="fw-bold">
+                                            <a href="blog-single.html">
+
+                                                Meeting Chocolate Consumers
+                                                Where They Are
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                            laboris nisi ut a
+                                            liquip ex ea commodo consequat. Duis aute
+                                            irure dolor...
+                                        </p>
+                                        <a href="blog-single.html"
+                                            class=" btn-readmore tf-btn style-2 font-cerebri fw-medium">READ
+                                            MORE</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="wg-blog wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="blog-img">
+                                        <img src="assets/image/blog/blog-2.jpg" alt="Blog 1">
+                                        <div class="date-time">
+                                            <p class="entry-day fw-medium">25</p>
+                                            <p class="entry-month fw-book">JUN 23</p>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="meta">
+                                            <a href="#" class="entry-author font-cerebri fw-book text-13-30">
+                                                BY JHON MATTER
+                                            </a>
+                                            <div class="entry-type">
+                                                <a href="#" class="font-cerebri fw-book text-13-30">
+                                                    CHOCOLATE
+                                                    FOOD</a>
+                                                ,
+                                                <a href="#" class=" font-cerebri fw-book text-13-30">
+                                                    FOOD
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h3 class="fw-bold">
+                                            <a href="blog-single.html">
+
+                                                Chocolatier Versus Chocolate
+                                                Maker – What’s the Difference?
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                            laboris nisi ut a
+                                            liquip ex ea commodo consequat. Duis aute
+                                            irure dolor...
+                                        </p>
+                                        <a href="blog-single.html"
+                                            class=" btn-readmore tf-btn style-2 font-cerebri fw-medium">READ
+                                            MORE</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="wg-blog wow fadeInUp" data-wow-delay="0s">
+                                    <div class="blog-img">
+                                        <img src="assets/image/blog/blog-3.jpg" alt="Blog 1">
+                                        <div class="date-time">
+                                            <p class="entry-day fw-medium">25</p>
+                                            <p class="entry-month fw-book">JUN 23</p>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="meta">
+                                            <a href="#" class="entry-author font-cerebri fw-book text-13-30">
+                                                BY JHON MATTER
+                                            </a>
+                                            <div class="entry-type">
+                                                <a href="#" class="font-cerebri fw-book text-13-30">
+                                                    CHOCOLATE
+                                                    FOOD</a>
+                                                ,
+                                                <a href="#" class=" font-cerebri fw-book text-13-30">
+                                                    FOOD
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h3 class="fw-bold">
+                                            <a href="blog-single.html">
+
+                                                Shipping Chocolate: The Story of
+                                                Carl the Snowman
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                            laboris nisi ut a
+                                            liquip ex ea commodo consequat. Duis aute
+                                            irure dolor...
+                                        </p>
+                                        <a href="blog-single.html"
+                                            class=" btn-readmore tf-btn style-2 font-cerebri fw-medium">READ
+                                            MORE</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="wg-blog">
+                                    <div class="blog-img">
+                                        <img src="assets/image/blog/blog-4.jpg" alt="Blog 1">
+                                        <div class="date-time">
+                                            <p class="entry-day fw-medium">25</p>
+                                            <p class="entry-month fw-book">JUN 23</p>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="meta">
+                                            <a href="#" class="entry-author font-cerebri fw-book text-13-30">
+                                                BY JHON MATTER
+                                            </a>
+                                            <div class="entry-type">
+                                                <a href="#" class="font-cerebri fw-book text-13-30">
+                                                    CHOCOLATE
+                                                    FOOD</a>
+                                                ,
+                                                <a href="#" class=" font-cerebri fw-book text-13-30">
+                                                    FOOD
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h3 class="fw-bold">
+                                            <a href="blog-single.html">
+
+                                                8 Of The Best Cheeseboards
+                                                For Christmas
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                            laboris nisi ut a
+                                            liquip ex ea commodo consequat. Duis aute
+                                            irure dolor...
+                                        </p>
+                                        <a href="blog-single.html"
+                                            class="btn-readmore tf-btn style-2 font-cerebri fw-medium">READ
+                                            MORE</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="wg-blog">
+                                    <div class="blog-img">
+                                        <img src="assets/image/blog/blog-5.jpg" alt="Blog 1">
+                                        <div class="date-time">
+                                            <p class="entry-day fw-medium">25</p>
+                                            <p class="entry-month fw-book">JUN 23</p>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="meta">
+                                            <a href="#" class="entry-author font-cerebri fw-book text-13-30">
+                                                BY JHON MATTER
+                                            </a>
+                                            <div class="entry-type">
+                                                <a href="#" class="font-cerebri fw-book text-13-30">
+                                                    CHOCOLATE
+                                                    FOOD</a>
+                                                ,
+                                                <a href="#" class=" font-cerebri fw-book text-13-30">
+                                                    FOOD
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h3 class="fw-bold">
+                                            <a href="blog-single.html">
+
+                                                The Science of Milk Chocolate:
+                                                How it Affects Your Body
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                            laboris nisi ut a
+                                            liquip ex ea commodo consequat. Duis aute
+                                            irure dolor...
+                                        </p>
+                                        <a href="blog-single.html"
+                                            class="btn-readmore tf-btn style-2 font-cerebri fw-medium">READ
+                                            MORE</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-slider btn-our-news style-index btn-next ">
+                        <i class="icon-uniE919 "></i>
+                    </div>
+                    <div class="btn-slider btn-our-news style-index btn-prev">
+                        <i class="icon-left-chevron "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- Blog section end -->
+
+<!-- section infor store  -->
+<section class="section-infor-store tf-spacing-5">
+    <div class="tf-container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="infor-left wow fadeInUp" data-wow-delay="0s">
+                    <h2 class="title fs-45 fw-bold">Find Us?</h2>
+                    <div class="line"></div>
+
+                    <p class="text fw-bold">The Meatery
+                        21 Edgware Road,
+                        London W2 2JE</p>
+                    <p class="text-1 fw-bold">info@themeatery.co.uk</p>
+                    <p class="text-2 fw-bold">+020 7123 4567</p>
+                    <!-- <a href="#" class="tf-btn btn-switch-text">
+                        <span>
+                            <span class="btn-double-text" data-text="GET DIRECTIONS">GET DIRECTIONS</span>
+                        </span>
+                    </a> -->
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="image-center wow fadeInUp" data-wow-delay="0.1s">
+                    <img src="assets/images/meatery_lamb.webp" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="infor-left wow fadeInUp" data-wow-delay="0s">
+                    <h2 class="title fs-45 fw-bold">Open Time</h2>
+                    <div class="line"></div>
+
+                    <p class="text fw-bold">Monday - Sunday: 12pm - 12am</p>
+                    <p class="text-1 fw-bold">Last reservations 11pm</p>
+                    <p class="text-2 fw-bold">Last orders 11.30pm</p>
+                    <!-- <a href="#" class="tf-btn btn-switch-text">
+                        <span>
+                            <span class="btn-double-text" data-text="GET DIRECTIONS">GET DIRECTIONS</span>
+                        </span>
+                    </a> -->
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /section infor store  -->

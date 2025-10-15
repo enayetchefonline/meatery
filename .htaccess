@@ -1,0 +1,17 @@
+# RewriteEngine On
+
+# # Canonical redirect: /pages/filename.php → /filename
+# RewriteCond %{THE_REQUEST} \s/pages/([^.]+)\.php[\s?] [NC]
+# RewriteRule ^pages/([^.]+)\.php$ /%1 [R=301,L]
+
+# # Rewrite /filename to /pages/filename.php if the file exists
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{DOCUMENT_ROOT}/pages/$1.php -f
+# RewriteRule ^([^/.]+)$ /pages/$1.php [L]
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [L]
+RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization},L]

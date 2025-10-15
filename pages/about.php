@@ -29,8 +29,6 @@
 
         <!-- main content -->
         <div class="main-content">
-
-
             <!-- section about us  -->
             <section class="section-about-us mt-5">
                 <div class=" tf-container">

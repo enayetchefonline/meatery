@@ -1,6 +1,6 @@
 <?php
 
-function base_url($url = 'home')
+function base_url($url = '')
 {
     return $url;
 }
@@ -71,7 +71,7 @@ $urlSlugArray = explode("/", $urlSlug);
 
 // If the URL is empty or just the base URL (home page)
 if ($urlSlug === "" || $urlSlug === "/") {
-    $slugKey = "home";  // Set to home if empty or just '/'
+    $slugKey = "/";  // Set to home if empty or just '/'
 } elseif (count($urlSlugArray) > 2) {
     // If the URL contains more than 2 segments, it's an error
     header("Status: 404 Not Found");

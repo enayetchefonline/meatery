@@ -22,23 +22,6 @@
         </div>
     </div>
 </div>
-<!-- /page-title -->
-<!-- <div class="page-title">
-    <div class="wrap-content">
-        <div class="content">
-            <h1>Our Menu</h1>
-            <p class="sub-title">
-                Explore our menu of Halal steak, seafood, and seasonal produce in Central London near Edgware Road,
-                Marble Arch, and Paddington.
-            </p>
-            <ul class="breadcrums">
-                <li><a href="index-2.html">HOME</a></li>
-                <li>›</li>
-                <li>OUR MENU</li>
-            </ul>
-        </div>
-    </div>
-</div> -->
 
 <!-- ===== MENU (Dark skeleton) ===== -->
 <section class="menu-wrap">
@@ -1030,6 +1013,8 @@
         box-shadow: 0 6px 18px rgba(212, 175, 55, 0.35);
         color: #fff !important;
     }
+
+
 
     /* Responsive */
     @media (max-width:980px) {

@@ -34,7 +34,7 @@
     <section id="small-plates" class="menu-block">
         <div class="menu-container">
             <div class="menu-container-image">
-                <img src="assets/images/item/4.png" alt="Small plates selection" />
+                <img src="assets/menu/1.png" alt="Small plates selection" />
                 <div class="menu-header">
                     <h2>Small Plates</h2>
                     <p class="cat-sub">Perfect starters &amp; shareables</p>
@@ -113,7 +113,7 @@
     <section id="main" class="menu-block">
         <div class="menu-container">
             <div class="menu-container-image">
-                <img src="assets/images/menu/Lamb-chops.jpg" alt="Main courses" />
+                <img src="assets/menu/2.png" alt="Main courses" />
                 <div class="menu-header">
                     <h2>Main</h2>
                     <p class="cat-sub">Hearty plates &amp; signatures</p>
@@ -210,7 +210,7 @@
     <section id="sharing" class="menu-block">
         <div class="menu-container">
             <div class="menu-container-image">
-                <img src="assets/images/menu/sharing.jpg" alt="Sharing platters" />
+                <img src="assets/menu/3.png" alt="Sharing platters" />
                 <div class="menu-header">
                     <h2>Sharing</h2>
                     <p class="cat-sub">Gather &amp; enjoy together</p>
@@ -246,7 +246,7 @@
     <section id="biryani" class="menu-block">
         <div class="menu-container">
             <div class="menu-container-image">
-                <img src="assets/images/menu/Biryani.jpg" alt="Biryani" />
+                <img src="assets/menu/4.png" alt="Biryani" />
                 <div class="menu-header">
                     <h2>Biryani</h2>
                     <p class="cat-sub">Dum-style layered goodness</p>
@@ -283,7 +283,7 @@
     <section id="steak" class="menu-block">
         <div class="menu-container">
             <div class="menu-container-image">
-                <img src="assets/images/menu/Steak.jpg" alt="Steak" />
+                <img src="assets/menu/5.png" alt="Steak" />
                 <div class="menu-header">
                     <h2>Steak</h2>
                     <p class="cat-sub">Fire, flavour &amp; finesse</p>
@@ -350,7 +350,7 @@
     <section id="burger" class="menu-block">
         <div class="menu-container">
             <div class="menu-container-image">
-                <img src="assets/images/menu/Burger.jpg" alt="Burgers" />
+                <img src="assets/menu/6.png" alt="Burgers" />
                 <div class="menu-header">
                     <h2>Burger</h2>
                     <p class="cat-sub">Stacked &amp; loaded</p>
@@ -403,7 +403,7 @@
     <section id="drinks" class="menu-block">
         <div class="menu-container">
             <div class="menu-container-image">
-                <img src="assets/images/menu/Drinks.jpg" alt="Drinks" />
+                <img src="assets/menu/7.png" alt="Drinks" />
                 <div class="menu-header">
                     <h2>Drinks</h2>
                     <p class="cat-sub">Mocktails, shakes &amp; more</p>
@@ -570,7 +570,7 @@
     <section id="dessert" class="menu-block">
         <div class="menu-container">
             <div class="menu-container-image">
-                <img src="assets/images/menu/Dessert.jpg" alt="Desserts" />
+                <img src="assets/menu/8.png" alt="Desserts" />
                 <div class="menu-header">
                     <h2>Dessert</h2>
                     <p class="cat-sub">Sweet endings</p>
@@ -644,344 +644,344 @@
 
 <!-- ===== MINIMAL DARK SKELETON CSS (extended slightly for notes/drinks) ===== -->
 <style>
-    :root {
-        --bg: #0f172a;
-        --card: #111827;
-        --ink: #e5e7eb;
-        --muted: #9aa3b2;
-        --line: #253047;
-        --brand: #d4af37;
-        --chip: #0b1020;
-    }
+:root {
+    --bg: #0f172a;
+    --card: #111827;
+    --ink: #e5e7eb;
+    --muted: #9aa3b2;
+    --line: #253047;
+    --brand: #d4af37;
+    --chip: #0b1020;
+}
 
-    body {
-        background: var(--bg);
-        color: var(--ink);
-    }
+body {
+    background: var(--bg);
+    color: var(--ink);
+}
 
-    .page-title {
-        padding: 2.5rem 1rem 1rem;
-    }
+.page-title {
+    padding: 2.5rem 1rem 1rem;
+}
 
-    .page-title h1 {
-        margin: 0 0 .4rem;
-        font-size: 2.2rem;
-    }
+.page-title h1 {
+    margin: 0 0 .4rem;
+    font-size: 2.2rem;
+}
 
-    .page-title .sub-title {
-        margin: 0 0 .6rem;
-        color: var(--muted);
-    }
+.page-title .sub-title {
+    margin: 0 0 .6rem;
+    color: var(--muted);
+}
 
-    .breadcrums {
-        list-style: none;
-        display: flex;
-        gap: .5rem;
-        padding: 0;
-        margin: 0;
-        color: var(--muted);
-    }
+.breadcrums {
+    list-style: none;
+    display: flex;
+    gap: .5rem;
+    padding: 0;
+    margin: 0;
+    color: var(--muted);
+}
 
-    .breadcrums a {
-        color: var(--ink);
-        text-decoration: none;
-        border-bottom: 1px dotted transparent;
-    }
+.breadcrums a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+}
 
-    .breadcrums a:hover {
-        border-bottom-color: var(--brand);
-    }
+.breadcrums a:hover {
+    border-bottom-color: var(--brand);
+}
 
-    .menu-wrap {
-        padding: 1rem 1rem 3rem;
-        font-size: 17px;
-        line-height: 1.7;
-    }
+.menu-wrap {
+    padding: 1rem 1rem 3rem;
+    font-size: 17px;
+    line-height: 1.7;
+}
 
-    .menu-nav {
-        max-width: 1200px;
-        margin: 0 auto 1.25rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: .5rem;
-    }
+.menu-nav {
+    max-width: 1200px;
+    margin: 0 auto 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
 
-    .menu-nav a {
-        text-decoration: none;
-        color: var(--ink);
-        border: 1px solid var(--line);
-        padding: .5rem .8rem;
-        border-radius: 999px;
-        font-weight: 600;
-        transition: .2s;
-    }
+.menu-nav a {
+    text-decoration: none;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    padding: .5rem .8rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: .2s;
+}
 
-    .menu-nav a:hover {
-        border-color: var(--brand);
-        box-shadow: 0 0 0 3px rgba(212, 175, 55, .12);
-    }
+.menu-nav a:hover {
+    border-color: var(--brand);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, .12);
+}
 
-    .menu-block {
-        max-width: 1200px;
-        margin: 2rem auto;
-    }
+.menu-block {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
 
-    .menu-container {
-        background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, .18);
-    }
+.menu-container {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .18);
+}
 
-    .menu-container-image {
-        position: relative;
-        line-height: 0;
-    }
+.menu-container-image {
+    position: relative;
+    line-height: 0;
+}
 
-    .menu-container-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+.menu-container-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-    .menu-container-image::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .25), rgba(0, 0, 0, .45));
-    }
+.menu-container-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .25), rgba(0, 0, 0, .45));
+}
 
-    .menu-header {
-        position: absolute;
-        left: 20px;
-        bottom: 16px;
-        z-index: 2;
-        color: #fff;
-    }
+.menu-header {
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+    z-index: 2;
+    color: #fff;
+}
 
-    .menu-header h2 {
-        margin: 0;
-        font-size: clamp(22px, 3vw, 34px);
-    }
+.menu-header h2 {
+    margin: 0;
+    font-size: clamp(22px, 3vw, 34px);
+}
 
-    .menu-header .cat-sub {
-        margin: 4px 0 0;
-        color: #f3f4f6;
-        opacity: .9;
-        font-size: clamp(13px, 1.6vw, 16px);
-    }
+.menu-header .cat-sub {
+    margin: 4px 0 0;
+    color: #f3f4f6;
+    opacity: .9;
+    font-size: clamp(13px, 1.6vw, 16px);
+}
 
+.menu-container-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-cotainer-left {
+    border-right: 1px solid var(--line);
+}
+
+.menu-cotainer-left,
+.menu-container-right {
+    padding: 24px;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: .9rem;
+}
+
+.menu-list li {
+    padding-bottom: .7rem;
+    border-bottom: 1px dashed var(--line);
+}
+
+.menu-list li:last-child {
+    border-bottom: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .75rem;
+    align-items: baseline;
+}
+
+.item {
+    font-weight: 700;
+}
+
+.price {
+    background: linear-gradient(180deg, var(--brand), #b98f26);
+    color: var(--chip);
+    padding: .15rem .55rem;
+    border-radius: 999px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.desc {
+    color: var(--muted);
+    margin: .25rem 0 0;
+}
+
+/* Notes / sauce box */
+.note {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: .95rem;
+}
+
+.sauce-box {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: .8rem 1rem;
+    margin-top: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .015));
+}
+
+.sauce-box h4 {
+    margin: .1rem 0 .5rem;
+    font-size: 1rem;
+}
+
+.sauce-list {
+    margin: 0;
+    padding-left: 1rem;
+    display: grid;
+    gap: .2rem;
+}
+
+/* Drinks */
+.drink-columns {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.drink-col {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .015));
+}
+
+.drink-title {
+    margin: .1rem 0 .6rem;
+    font-weight: 800;
+    letter-spacing: .3px;
+}
+
+.menu-list.compact li {
+    padding-bottom: .45rem;
+}
+
+/* Ordering platforms */
+.ordering-platforms {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+.op-inner h2 {
+    margin: 0 0 .75rem;
+    font-size: 2rem;
+}
+
+.op-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: .8rem;
+}
+
+.platform-btn {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: .75rem;
+    text-decoration: none;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: .85rem .95rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .015));
+    transition: transform .06s, box-shadow .2s, border-color .2s;
+}
+
+.platform-btn:hover {
+    transform: translateY(-1px);
+    border-color: var(--brand);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, .12), 0 8px 24px rgba(0, 0, 0, .22);
+}
+
+.badge {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    font-size: .9rem;
+    color: #0b1020;
+    background: var(--brand);
+}
+
+.brand-chefonline .badge {
+    background: #c92a2a;
+    color: #fff;
+}
+
+.brand-justeat .badge {
+    background: #ff5a00;
+    color: #fff;
+}
+
+.brand-ubereats .badge {
+    background: #06c167;
+    color: #0b1020;
+}
+
+.brand-deliveroo .badge {
+    background: #00ccbc;
+    color: #0b1020;
+}
+
+.label {
+    font-weight: 700;
+}
+
+.ext {
+    opacity: .85;
+    transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width:980px) {
+    .drink-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:820px) {
     .menu-container-column {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .menu-cotainer-left {
-        border-right: 1px solid var(--line);
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
     }
 
     .menu-cotainer-left,
     .menu-container-right {
-        padding: 24px;
+        padding: 18px;
     }
 
-    .menu-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: grid;
-        gap: .9rem;
+    .menu-header {
+        left: 14px;
+        right: 14px;
     }
-
-    .menu-list li {
-        padding-bottom: .7rem;
-        border-bottom: 1px dashed var(--line);
-    }
-
-    .menu-list li:last-child {
-        border-bottom: 0;
-    }
-
-    .row {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: .75rem;
-        align-items: baseline;
-    }
-
-    .item {
-        font-weight: 700;
-    }
-
-    .price {
-        background: linear-gradient(180deg, var(--brand), #b98f26);
-        color: var(--chip);
-        padding: .15rem .55rem;
-        border-radius: 999px;
-        font-weight: 800;
-        white-space: nowrap;
-    }
-
-    .desc {
-        color: var(--muted);
-        margin: .25rem 0 0;
-    }
-
-    /* Notes / sauce box */
-    .note {
-        margin-top: 12px;
-        color: var(--muted);
-        font-size: .95rem;
-    }
-
-    .sauce-box {
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        padding: .8rem 1rem;
-        margin-top: 10px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .015));
-    }
-
-    .sauce-box h4 {
-        margin: .1rem 0 .5rem;
-        font-size: 1rem;
-    }
-
-    .sauce-list {
-        margin: 0;
-        padding-left: 1rem;
-        display: grid;
-        gap: .2rem;
-    }
-
-    /* Drinks */
-    .drink-columns {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .drink-col {
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        padding: 1rem;
-        background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .015));
-    }
-
-    .drink-title {
-        margin: .1rem 0 .6rem;
-        font-weight: 800;
-        letter-spacing: .3px;
-    }
-
-    .menu-list.compact li {
-        padding-bottom: .45rem;
-    }
-
-    /* Ordering platforms */
-    .ordering-platforms {
-        max-width: 1200px;
-        margin: 2rem auto 0;
-    }
-
-    .op-inner h2 {
-        margin: 0 0 .75rem;
-        font-size: 2rem;
-    }
-
-    .op-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        gap: .8rem;
-    }
-
-    .platform-btn {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        align-items: center;
-        gap: .75rem;
-        text-decoration: none;
-        color: var(--ink);
-        border: 1px solid var(--line);
-        border-radius: 14px;
-        padding: .85rem .95rem;
-        background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .015));
-        transition: transform .06s, box-shadow .2s, border-color .2s;
-    }
-
-    .platform-btn:hover {
-        transform: translateY(-1px);
-        border-color: var(--brand);
-        box-shadow: 0 0 0 3px rgba(212, 175, 55, .12), 0 8px 24px rgba(0, 0, 0, .22);
-    }
-
-    .badge {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        font-weight: 800;
-        font-size: .9rem;
-        color: #0b1020;
-        background: var(--brand);
-    }
-
-    .brand-chefonline .badge {
-        background: #c92a2a;
-        color: #fff;
-    }
-
-    .brand-justeat .badge {
-        background: #ff5a00;
-        color: #fff;
-    }
-
-    .brand-ubereats .badge {
-        background: #06c167;
-        color: #0b1020;
-    }
-
-    .brand-deliveroo .badge {
-        background: #00ccbc;
-        color: #0b1020;
-    }
-
-    .label {
-        font-weight: 700;
-    }
-
-    .ext {
-        opacity: .85;
-        transform: translateY(-1px);
-    }
-
-    /* Responsive */
-    @media (max-width:980px) {
-        .drink-columns {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    @media (max-width:820px) {
-        .menu-container-column {
-            grid-template-columns: 1fr;
-        }
-
-        .menu-cotainer-left {
-            border-right: 0;
-            border-bottom: 1px solid var(--line);
-        }
-
-        .menu-cotainer-left,
-        .menu-container-right {
-            padding: 18px;
-        }
-
-        .menu-header {
-            left: 14px;
-            right: 14px;
-        }
-    }
+}
 </style>

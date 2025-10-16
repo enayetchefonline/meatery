@@ -10,17 +10,7 @@
                             incididunt ut
                             labore et dolore magna
                             aliqua. </p>
-                        <div class="breadcrum-wrap">
-                            <ul class="breadcrums">
-                                <li> <a href="index-2.html" class="font-cerebri">HOME</a> </li>
-                                <li> <i class="icon-arrow-right2"></i></li>
-                                <li>
-                                    <p>OUR SINGLE</p>
-                                </li>
-                            </ul>
 
-
-                        </div>
                     </div>
                 </div>
             </div>

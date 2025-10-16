@@ -324,8 +324,16 @@
                             Explore our menu of Halal steak, seafood, and seasonal produce in Central London near
                             Edgware Road, Marble Arch, and Paddington.
                         </p>
+                        <a href="<?php echo base_url('menu'); ?>"
+                            class="btn-readmore btn-switch-text tf-btn font-cerebri wow fadeInUp" data-wow-delay="0s">
+                            <span><span class="btn-double-text" data-text="Browse our
+                                    menu">Browse our
+                                    menu</span></span>
+                        </a>
                     </div>
-                    <div class="swiper-container discovery-shop-3">
+
+
+                    <!-- <div class="swiper-container discovery-shop-3">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="wg-product-item hover-img wow fadeInUp" data-wow-delay="0s">
@@ -376,7 +384,7 @@
                     </div>
                     <div class="btn-slider btn-discovery-shop home-1 btn-prev">
                         <i class="icon-left-chevron "></i>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -547,6 +555,7 @@
         </div>
     </div>
 </section>
+
 
 <script>
     (() => {

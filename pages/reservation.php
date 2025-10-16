@@ -10,15 +10,7 @@
                     help. <br>
                     Get in touch and let us make your dining experience unforgettable.
                 </p>
-                <div class="breadcrum-wrap">
-                    <ul class="breadcrums">
-                        <li><a href="index-2.html" class="font-cerebri">HOME</a></li>
-                        <li><i class="icon-arrow-right2"></i></li>
-                        <li>
-                            <p>CONTACT US</p>
-                        </li>
-                    </ul>
-                </div>
+
             </div>
         </div>
     </div>
@@ -73,30 +65,9 @@
                                 <input id="time" name="time" class="control" type="time" required />
                             </div>
 
-                            <div class="field select">
-                                <label class="label" for="guests">Guests</label>
-                                <select id="guests" name="guests" class="control" required>
-                                    <option value="" disabled selected>Select guests</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8+</option>
-                                </select>
-                            </div>
-
-                            <div class="field select">
-                                <label class="label" for="occasion">Occasion (optional)</label>
-                                <select id="occasion" name="occasion" class="control">
-                                    <option value="" selected>None</option>
-                                    <option>Birthday</option>
-                                    <option>Anniversary</option>
-                                    <option>Business</option>
-                                    <option>Other</option>
-                                </select>
+                            <div class="field">
+                                <label class="label" for="phone">Guest Number</label>
+                                <input id="guest" name="guest" class="control" type="number" placeholder="5" required />
                             </div>
 
                             <div class="field" style="grid-column: 1 / -1;">

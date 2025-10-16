@@ -9,15 +9,7 @@
                     help. <br />
                     Get in touch and let us make your dining experience unforgettable.
                 </p>
-                <div class="breadcrum-wrap">
-                    <ul class="breadcrums">
-                        <li><a href="index-2.html" class="font-cerebri">HOME</a></li>
-                        <li><i class="icon-arrow-right2"></i></li>
-                        <li>
-                            <p>CONTACT US</p>
-                        </li>
-                    </ul>
-                </div>
+
             </div>
         </div>
     </div>

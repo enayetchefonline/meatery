@@ -8,16 +8,7 @@
                 <p class="sub-title text-17-28">Explore our menu of Halal steak, seafood, and seasonal produce in
                     Central London near Edgware Road, <br>
                     Marble Arch, and Paddington.</p>
-                <div class="breadcrum-wrap">
-                    <ul class="breadcrums">
-                        <li> <a href="index-2.html" class="font-cerebri">HOME</a> </li>
-                        <li> <i class="icon-arrow-right2"></i></li>
-                        <li>
-                            <p>OUR MENU</p>
-                        </li>
-                    </ul>
 
-                </div>
             </div>
         </div>
     </div>

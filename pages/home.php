@@ -264,8 +264,9 @@
             </div>
 
             <div class="bottom-section aos-init aos-animate" data-aos-duration="1000" data-aos="fade-up">
-                <a href="<?php echo base_url('menu'); ?>" class="btn-view-more tf-btn font-cerebri style-2 style-4 wow fadeInUp"
-                    data-wow-delay="0s">EXPLORE OUR MENU</a>
+                <a href="<?php echo base_url('menu'); ?>"
+                    class="btn-view-more tf-btn font-cerebri style-2 style-4 wow fadeInUp" data-wow-delay="0s">EXPLORE
+                    OUR MENU</a>
             </div>
         </div>
     </div>
@@ -388,8 +389,8 @@
         <div class="discovery-now">
             <h2 class="title fw-bold wow fadeInUp" data-wow-delay="0s">British Steaks. Indian Heat. Unforgettable Taste.
             </h2>
-            <a href="/reservation" class="btn-readmore btn-switch-text tf-btn font-cerebri wow fadeInUp"
-                data-wow-delay="0s">
+            <a href="<?php echo base_url('reservation'); ?>"
+                class="btn-readmore btn-switch-text tf-btn font-cerebri wow fadeInUp" data-wow-delay="0s">
                 <span><span class="btn-double-text" data-text="BOOK A TABLE NOW">BOOK A TABLE NOW</span></span>
             </a>
         </div>

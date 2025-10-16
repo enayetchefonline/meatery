@@ -56,19 +56,19 @@
                                 <a href="<?php echo base_url('home'); ?>" class="name-nav">Home</a>
                             </li>
                             <li class="item">
-                                <a href="menu" class="name-nav">Menu</a>
+                                <a href="<?php echo base_url('menu'); ?>" class="name-nav">Menu</a>
                             </li>
                             <li class="item">
-                                <a href="about" class="name-nav">About Us</a>
+                                <a href="<?php echo base_url('about'); ?>" class="name-nav">About Us</a>
                             </li>
                             <li class="item">
-                                <a href="contact" class="name-nav">Contact Us</a>
+                                <a href="<?php echo base_url('contact'); ?>" class="name-nav">Contact Us</a>
                             </li>
                             <li class="item">
-                                <a href="reservation" class="name-nav">Reservation</a>
+                                <a href="<?php echo base_url('reservation'); ?>" class="name-nav">Reservation</a>
                             </li>
                             <li class="item">
-                                <a href="blog" class="name-nav">Blog</a>
+                                <a href="<?php echo base_url('blog'); ?>" class="name-nav">Blog</a>
                             </li>
                         </ul>
                     </div>
@@ -138,22 +138,22 @@
                         <nav id="mobile-main-nav" class="mobile-main-nav">
                             <ul id="menu-mobile-menu" class="menu">
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a href="<?php echo base_url(); ?>">Home</a>
+                                    <a href="<?php echo base_url('home'); ?>">Home</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a href="menu">Menus</a>
+                                    <a href="<?php echo base_url('menu'); ?>">Menus</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a href="about">About Us</a>
+                                    <a href="<?php echo base_url('about'); ?>">About Us</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a href="contact">Contact Us</a>
+                                    <a href="<?php echo base_url('contact'); ?>">Contact Us</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a href="reservation">Reservation</a>
+                                    <a href="<?php echo base_url('reservation'); ?>">Reservation</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
-                                    <a href="blog">Blog</a>
+                                    <a href="<?php echo base_url('blog'); ?>">Blog</a>
                                 </li>
                                 <!-- <li class="menu-item menu-item-has-children-mobile">
 

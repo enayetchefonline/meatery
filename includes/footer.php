@@ -1,8 +1,6 @@
 </div>
 <!-- /main content -->
 
-<?php //echo base_url() ?>
-
 
 <!-- Footer -->
 <div class="footer" id="footer">
@@ -22,14 +20,14 @@
                     <div class="footer-link">
                         <div class="footer-link-columns">
                             <ul>
-                                <li><a href="/">HOME</a></li>
-                                <li><a href="/menu">MENUS</a></li>
-                                <li><a href="/about">ABOUT US</a></li>
+                                <li><a href="<?php echo base_url('home'); ?>">HOME</a></li>
+                                <li><a href="<?php echo base_url('menu'); ?>">MENUS</a></li>
+                                <li><a href="<?php echo base_url('about'); ?>">ABOUT US</a></li>
                             </ul>
                             <ul>
-                                <li><a href="/contact">CONTACT US</a></li>
-                                <li><a href="/reservation">RESERVATION</a></li>
-                                <li><a href="/blog">BLOG</a></li>
+                                <li><a href="<?php echo base_url('contact'); ?>">CONTACT US</a></li>
+                                <li><a href="<?php echo base_url('reservation'); ?>">RESERVATION</a></li>
+                                <li><a href="<?php echo base_url('blog'); ?>">BLOG</a></li>
                             </ul>
                         </div>
                     </div>

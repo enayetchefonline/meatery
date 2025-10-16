@@ -115,7 +115,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="https://www.chefonline.co.uk/" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
             </div>
         </div>
     </section>
@@ -216,7 +216,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="https://www.chefonline.co.uk/" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
             </div>
         </div>
     </section>
@@ -256,7 +256,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="https://www.chefonline.co.uk/" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
             </div>
         </div>
     </section>
@@ -297,7 +297,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="https://www.chefonline.co.uk/" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
             </div>
         </div>
     </section>
@@ -368,7 +368,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="https://www.chefonline.co.uk/" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
             </div>
         </div>
     </section>
@@ -425,7 +425,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="https://www.chefonline.co.uk/" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
             </div>
         </div>
     </section>
@@ -596,7 +596,7 @@
             </div><!-- /columns -->
 
             <div class="order-btn-wrap">
-                <a href="https://www.chefonline.co.uk/" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
             </div>
         </div>
     </section>
@@ -653,7 +653,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="https://www.chefonline.co.uk/" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
             </div>
         </div>
     </section>

@@ -1,7 +1,7 @@
 </div>
 <!-- /main content -->
 
-<?php echo base_url() ?>
+<?php //echo base_url() ?>
 
 
 <!-- Footer -->

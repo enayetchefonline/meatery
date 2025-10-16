@@ -1,6 +1,6 @@
 <?php
 
-function base_url($url = '')
+function base_url($url = 'home')
 {
     return $url;
 }
@@ -13,7 +13,7 @@ function uri_string()
     return $_GET['url'];
 }
 
-$pagesNameArray = array("home", "menu", "about", "contact", "reservation", "blog");
+$pagesNameArray = array("home", "menu", "about", "contact", "reservation", "blog","not-found");
 
 $pagesArray = array(
     "home" => "home.php",
@@ -22,6 +22,7 @@ $pagesArray = array(
     "contact" => "contact.php",
     "reservation" => "reservation.php",
     "blog" => "blog.php",
+    "not-found" => "not-found.php",
 );
 
 $titleArray = array(
@@ -31,6 +32,7 @@ $titleArray = array(
     "contact" => 'Contact Malaraj - The Best Indian Restaurant & Takeaway in St Albans',
     "reservation" => 'Reservation - Malaraj Indian Restaurant & Takeaway in St Albans',
     "blog" => 'Blog - Malaraj Indian Restaurant & Takeaway in St Albans',
+    "not-found" => 'Not found page',
 );
 
 $descriptionArray = array(
@@ -40,15 +42,17 @@ $descriptionArray = array(
     "contact" => 'Get in touch with Malaraj, the top Indian restaurant and takeaway on London Rd, St Albans. Were here to assist with your orders and inquiries.',
     "reservation" => 'Book a table at Malaraj, the top Indian restaurant and takeaway on London Rd, St Albans. We offer a wide variety of dishes, including Tandoori Chicken, Biryani, Curry etc.',
     "blog" => 'Check out our blog at Malaraj, the top Indian restaurant and takeaway on London Rd, St Albans. We offer a wide variety of dishes, including Tandoori Chicken, Biryani, Curry etc.',
+    "not-found" => 'Not found page',
 );
 
 $canonical = array(
-    'home' => "",
+    'home' => "/home",
     "menu" => "/menu",
     'about' => "/about",
     'reservation' => "/reservation",
     'blog' => "/blog",
     'contact' => "/contact",
+    'not-found' => "/not-found",
 );
 
 $keywords = array(
@@ -58,12 +62,13 @@ $keywords = array(
     'reservation' => "",
     'blog' => "",
     'contact' => "",
+    'not-found' => "",
 
 );
 
 
 // Get the URL from the query parameter
-$urlSlug = isset($_GET['url']) ? $_GET['url'] : '';
+$urlSlug = isset($_GET['url']) ? $_GET['url'] : 'home';
 
 // Trim any trailing slashes
 $urlSlug = rtrim($urlSlug, "/");
@@ -82,7 +87,7 @@ if ($urlSlug === "" || $urlSlug === "/") {
     if (!in_array($slugKey, $pagesNameArray)) {
         // If the slug is invalid, show the error page
         header("Status: 404 Not Found");
-        $slugKey = "err";
+        $slugKey = "not-found";
     }
 }
 

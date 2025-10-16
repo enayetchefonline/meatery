@@ -53,7 +53,7 @@
                     <div class="header-center">
                         <ul class="nav-list">
                             <li class="item">
-                                <a href="<?php echo base_url(); ?>" class="name-nav">Home</a>
+                                <a href="<?php echo base_url('home'); ?>" class="name-nav">Home</a>
                             </li>
                             <li class="item">
                                 <a href="menu" class="name-nav">Menu</a>

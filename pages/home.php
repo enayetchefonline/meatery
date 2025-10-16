@@ -264,7 +264,7 @@
             </div>
 
             <div class="bottom-section aos-init aos-animate" data-aos-duration="1000" data-aos="fade-up">
-                <a href="/menu" class="btn-view-more tf-btn font-cerebri style-2 style-4 wow fadeInUp"
+                <a href="<?php echo base_url('menu'); ?>" class="btn-view-more tf-btn font-cerebri style-2 style-4 wow fadeInUp"
                     data-wow-delay="0s">EXPLORE OUR MENU</a>
             </div>
         </div>

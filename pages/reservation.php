@@ -44,7 +44,7 @@
                             </div>
                             <div class="field">
                                 <label class="label" for="phone">Phone Number</label>
-                                <input id="phone" name="phone" class="control" type="tel" placeholder="+8801XXXXXXXXX"
+                                <input id="phone" name="phone" class="control" type="tel" placeholder="020XXXXXXXXX"
                                     required />
                             </div>
                             <div class="field">

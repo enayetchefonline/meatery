@@ -64,7 +64,7 @@
                             <span class="item">Loaded Nachos</span>
                             <span class="price">£14.00</span>
                         </div>
-                        <p class="desc">Crispy tortilla piled high with savory minced lamb and melted cheese. Served
+                        <p class="desc">Crispy tortilla piled high with savoury minced lamb and melted cheese. Served
                             with salsa, sour cream, guacamole and jalapeños</p>
                     </li>
                     <li>

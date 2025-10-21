@@ -85,14 +85,14 @@
                                         <i class="icon-close"></i>
                                     </div>
                                     <img class="ls-is-cached lazyloaded" src="assets/images/logo/logo.webp"
-                                        data-src="assets/image/logo/welcome-logo.png" alt="">
+                                        data-src="assets/image/logo/welcome-logo.png" alt="" style="width: 200px;">
                                     <p class="text" style="font-size: 20px;">British Steaks. Indian Heat. Unforgettable
                                         Taste.</p>
                                     <div class="contact">
                                         <p class="number-call fw-bold font-cormorant letter-space-06 mb-8">
-                                            +020 7123 4567
+                                            020 7123 4567
                                         </p>
-                                        <p class="address mb-3">The Meatery
+                                        <p class="address mb-3">
                                             21 Edgware Road,
                                             London W2 2JE</p>
                                         <p class="email">info@themeatery.co.uk</p>
@@ -101,8 +101,8 @@
                                     <div class="schedule">
                                         <p class="mb-3">Monday - Sunday: 12pm - 12am</p>
                                         <!-- <p class="mb-3">Saturday - Sunday: 9.00am - 22.00pm</p> -->
-                                        <p>Last reservations 11pm</p>
-                                        <p>Last orders 11.30pm</p>
+                                        <!-- <p>Last reservations 11pm</p> -->
+                                        <!-- <p>Last orders 11.30pm</p> -->
                                     </div>
                                     <ul class="social">
                                         <li><a href="#">

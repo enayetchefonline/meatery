@@ -51,7 +51,8 @@
                         <li>
                             <div class="row"><span class="item">Loaded Nachos</span><span class="price">£14.00</span>
                             </div>
-                            <p class="desc">Crispy tortilla piled high with savory minced lamb and melted cheese. Served
+                            <p class="desc">Crispy tortilla piled high with savoury minced lamb and melted cheese.
+                                Served
                                 with salsa, sour cream, guacamole and jalapeños</p>
                         </li>
                         <li>
@@ -106,7 +107,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Book Now</a>
             </div>
         </div>
     </section>
@@ -207,7 +208,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Book Now</a>
             </div>
         </div>
     </section>
@@ -247,7 +248,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Book Now</a>
             </div>
         </div>
     </section>
@@ -288,7 +289,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Book Now</a>
             </div>
         </div>
     </section>
@@ -359,7 +360,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Book Now</a>
             </div>
         </div>
     </section>
@@ -416,7 +417,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Book Now</a>
             </div>
         </div>
     </section>
@@ -587,7 +588,7 @@
             </div><!-- /columns -->
 
             <div class="order-btn-wrap">
-                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Book Now</a>
             </div>
         </div>
     </section>
@@ -644,7 +645,7 @@
             </div>
 
             <div class="order-btn-wrap">
-                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Order Now</a>
+                <a href="<?php echo base_url('reservation'); ?>" target="_blank" class="btn-order">Book Now</a>
             </div>
         </div>
     </section>

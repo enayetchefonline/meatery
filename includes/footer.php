@@ -35,11 +35,11 @@
                         <ul class="contact">
                             <li class="call">
                                 <i class="icon-phone"></i>
-                                <a href="#">Call us: +020 7123 4567</a>
+                                <a href="#">Call us: 020 7123 4567</a>
                             </li>
                             <li class="address">
                                 <i class="icon-location"></i>
-                                <a href="#">The Meatery
+                                <a href="#">
                                     21 Edgware Road,
                                     London W2 2JE</a>
                             </li>

@@ -137,6 +137,14 @@
         transform: scale(1.1);
     }
 
+    .product-item .image img {
+        border-radius: 30px;
+    }
+
+    .img-fluid {
+        height: 500px !important;
+    }
+
     @keyframes fadeUp {
         from {
             opacity: 0;
@@ -276,14 +284,17 @@
     <div class="tf-container">
         <div class="row align-items-center flex-lg-row-reverse">
             <div class="col-lg-6">
-                <h2 class="fw-bold mb-3">Savor the Flavour: Premium Steak Perfection</h2>
+                <h2 class="fw-bold mb-3">Savour the Flavour: Premium Steak Perfection</h2>
                 <p class="mb-4">
-                    We source only the highest quality meats, fresh seasonal produce, and authentic spices to create bold, unforgettable flavours. Every dish is a celebration of premium ingredients, expertly prepared and beautifully served.
+                    We source only the highest quality meats, fresh seasonal produce, and authentic spices to create
+                    bold, unforgettable flavours. Every dish is a celebration of premium ingredients, expertly prepared
+                    and beautifully served.
 
                 </p>
             </div>
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="assets/images/meatery_lamb.webp" alt="Restaurant Interior" class="img-fluid rounded shadow">
+                <img src="assets/images/home/meatery_lamb.jpg" alt="Restaurant Interior"
+                    class="img-fluid rounded shadow" style="border-radius: 30px !important;">
             </div>
         </div>
     </div>
@@ -293,12 +304,15 @@
     <div class="tf-container">
         <div class="row align-items-center flex-lg-row-reverse">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="assets/images/meatery_lamb.webp" alt="Restaurant Interior" class="img-fluid rounded shadow">
+                <img src="assets/images/home/meatery_lamb.jpg" alt="Restaurant Interior"
+                    class="img-fluid rounded shadow" style="border-radius: 30px !important;">
             </div>
             <div class="col-lg-6">
                 <h2 class="fw-bold mb-3">Flavours with a Story</h2>
                 <p class="mb-4">
-                    At the heart of our kitchen are chefs who blend time-honoured Indian spices with modern culinary techniques, creating a truly unforgettable experience. Discover the story, the passion, and the people behind every plate.
+                    At the heart of our kitchen are chefs who blend time-honoured Indian spices with modern culinary
+                    techniques, creating a truly unforgettable experience. Discover the story, the passion, and the
+                    people behind every plate.
                 </p>
             </div>
         </div>
@@ -519,35 +533,40 @@
 <section class="section-infor-store tf-spacing-5">
     <div class="tf-container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="infor-left wow fadeInUp" data-wow-delay="0s">
                     <h2 class="title fs-45 fw-bold">Find Us?</h2>
                     <div class="line"></div>
-                    <p class="text fw-bold">The Meatery<br>21 Edgware Road,<br>London W2 2JE</p>
+                    <p class="text fw-bold">21 Edgware Road,<br>London W2 2JE</p>
                     <p class="text-1 fw-bold">info@themeatery.co.uk</p>
-                    <p class="text-2 fw-bold">+020 7123 4567</p>
+                    <p class="text-2 fw-bold">020 7123 4567</p>
                 </div>
             </div>
 
-            <div class="col-lg-4">
-                <div class="image-center wow fadeInUp" data-wow-delay="0.1s">
-                    <img src="assets/images/meatery_lamb.webp" alt="">
+            <!-- Replace image with Google Map -->
+            <div class="col-lg-6">
+                <div class="map-center wow fadeInUp" data-wow-delay="0.1s">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1989.1791572292444!2d-0.16325828403023988!3d51.5152448796361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab51f22e201%3A0xd4b47b4c3a741e91!2s21%20Edgware%20Rd%2C%20London%20W2%202JE%2C%20UK!5e0!3m2!1sen!2sbd!4v1739817297003!5m2!1sen!2sbd"
+                        width="100%" height="300" style="border:0; border-radius:10px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="infor-left wow fadeInUp" data-wow-delay="0s">
                     <h2 class="title fs-45 fw-bold">Open Time</h2>
                     <div class="line"></div>
                     <p class="text fw-bold">Monday - Sunday: 12pm - 12am</p>
-                    <p class="text-1 fw-bold">Last reservations 11pm</p>
-                    <p class="text-2 fw-bold">Last orders 11.30pm</p>
+                    <!-- <p class="text-1 fw-bold">Last reservations 11pm</p> -->
+                    <!-- <p class="text-2 fw-bold">Last orders 11.30pm</p> -->
                 </div>
             </div>
-
         </div>
     </div>
 </section>
+
 
 
 <script>

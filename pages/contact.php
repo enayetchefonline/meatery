@@ -41,7 +41,6 @@
                         </div>
                         <h3 class="title fw-bold">Address Here</h3>
                         <p class="address">
-                            The Meatery <br />
                             21 Edgware Road, <br />
                             London W2 2JE
                         </p>
@@ -55,8 +54,8 @@
                         </div>
                         <h3 class="title fw-bold">Open Time</h3>
                         <p class="time-open">Monday - Sunday : 12.00pm - 12.00am</p>
-                        <p class="time-close">Last reservations 11pm</p>
-                        <p class="time-close">Last orders 11.30pm</p>
+                        <!-- <p class="time-close">Last reservations 11pm</p> -->
+                        <!-- <p class="time-close">Last orders 11.30pm</p> -->
                     </div>
                 </div>
             </div>
@@ -98,7 +97,7 @@
                                 <div class="field" style="grid-column: 1 / -1;">
                                     <label class="label" for="c_phone">Phone Number</label>
                                     <input id="c_phone" name="phone" class="control" type="tel"
-                                        placeholder="+8801XXXXXXXXX" required />
+                                        placeholder="020XXXXXXXXX" required />
                                 </div>
 
                                 <div class="field" style="grid-column: 1 / -1;">
@@ -125,6 +124,27 @@
         </div>
     </section>
     <!-- /CONTACT FORM -->
+
+    <!-- ================== GOOGLE MAP ================== -->
+    <section class="section-map mt-5">
+        <div class="tf-container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="map-wrapper wow fadeInUp" data-wow-delay="0.2s" style="padding: 0 1rem;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1989.1791572292444!2d-0.16325828403023988!3d51.5152448796361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab51f22e201%3A0xd4b47b4c3a741e91!2s21%20Edgware%20Rd%2C%20London%20W2%202JE%2C%20UK!5e0!3m2!1sen!2sbd!4v1739817297003!5m2!1sen!2sbd"
+                            width="100%" height="400" style="border:0; border-radius:12px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /GOOGLE MAP -->
+</div>
+<!-- ================== /MAIN CONTENT ================== -->
+
 </div>
 <!-- ================== /MAIN CONTENT ================== -->
 
@@ -140,7 +160,7 @@
         --brand-ink: #0b1020;
         --ok: #10b981;
         --err: #ef4444;
-        max-width: 920px;
+        /* max-width: 920px; */
         margin: 2.2rem auto 4rem;
         padding: 0 1rem;
         color: var(--ink)

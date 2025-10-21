@@ -174,7 +174,7 @@
                 loading="eager">
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1 class="hero-title">Bold Indian flavours meet the timeless<br> art of the steakhouse.</h1>
+                <h1 class="hero-title">Where the bold flavours of India meet the timeless art of the steakhouse.</h1>
                 <p class="hero-sub">In Central London, we serve prime cuts with spices, crafted with passion and fire.
                 </p>
                 <!-- <a href="menu.html" class="hero-btn">Explore Menu</a> -->
@@ -205,8 +205,7 @@
             <div class="heading-section style-2 wow fadeInUp" data-wow-delay="0s">
                 <p class="sub-title">DISCOVER OUR MENU</p>
                 <h2 class="title">
-                    Crafted with the finest ingredients — grass-fed beef, fresh British seafood,
-                    seasonal produce, and artisan cheeses.
+                    Indulge in an unforgettable dining experience where East meets West on every plate.
                 </h2>
             </div>
 
@@ -277,12 +276,10 @@
     <div class="tf-container">
         <div class="row align-items-center flex-lg-row-reverse">
             <div class="col-lg-6">
-                <h2 class="fw-bold mb-3">Our Trending Dishes</h2>
+                <h2 class="fw-bold mb-3">Savor the Flavour: Premium Steak Perfection</h2>
                 <p class="mb-4">
-                    Try our famous <strong>Lamb Kebab</strong>, viral <strong>TikTok Tacos</strong>,
-                    and juicy <strong>Meaty Wings</strong>. Freshly served at our restaurant
-                    and takeaway locations near Edgware Road, Marble Arch, Paddington,
-                    Mayfair, Notting Hill, and more.
+                    We source only the highest quality meats, fresh seasonal produce, and authentic spices to create bold, unforgettable flavours. Every dish is a celebration of premium ingredients, expertly prepared and beautifully served.
+
                 </p>
             </div>
             <div class="col-lg-6 mb-4 mb-lg-0">
@@ -299,12 +296,9 @@
                 <img src="assets/images/meatery_lamb.webp" alt="Restaurant Interior" class="img-fluid rounded shadow">
             </div>
             <div class="col-lg-6">
-                <h2 class="fw-bold mb-3">Unforgettable Dining Experience</h2>
+                <h2 class="fw-bold mb-3">Flavours with a Story</h2>
                 <p class="mb-4">
-                    Enjoy delicious meals including <strong>Lamb Kebab</strong>,
-                    <strong>TikTok Tacos</strong>, and <strong>Meaty Wings</strong>.
-                    Located near Edgware Road, Marble Arch, and Mayfair,
-                    our restaurant blends great taste with warm hospitality.
+                    At the heart of our kitchen are chefs who blend time-honoured Indian spices with modern culinary techniques, creating a truly unforgettable experience. Discover the story, the passion, and the people behind every plate.
                 </p>
             </div>
         </div>
@@ -321,8 +315,7 @@
                         <p class="sub-title">EXPLORE OUR MENU</p>
                         <h2 class="title fs-45">Top Dishes</h2>
                         <p class="desc">
-                            Explore our menu of Halal steak, seafood, and seasonal produce in Central London near
-                            Edgware Road, Marble Arch, and Paddington.
+                            Explore our menu of Halal steak, seafood, and seasonal produce in Central London.
                         </p>
                         <a href="<?php echo base_url('menu'); ?>"
                             class="btn-readmore btn-switch-text tf-btn font-cerebri wow fadeInUp" data-wow-delay="0s">
